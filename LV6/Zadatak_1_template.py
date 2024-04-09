@@ -97,8 +97,8 @@ plt.show()
 
 # granica odluke je preciznija kod KNN-a
 
-# za K = 1, preciznije na train skupu, ali manje precizno na testu
-# za K = 100, manja preciznost i za train i test skup
+# za K = 1, preciznije na train skupu, ali manje precizno na testu (overfitting)
+# za K = 100, manja preciznost i za train i test skup (underfitting)
 
 scores = cross_val_score(KNN_model , X_train , y_train , cv =5)
 print ( scores )
