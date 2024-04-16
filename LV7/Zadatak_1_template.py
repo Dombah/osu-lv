@@ -48,3 +48,19 @@ plt.xlabel('$x_1$')
 plt.ylabel('$x_2$')
 plt.title('podatkovni primjeri')
 plt.show()
+
+#1.zad
+K_tests = [2,3,4,5]
+for k in K_tests:
+    km = KMeans(n_clusters=k, init='k-means++', max_iter=300, n_init=10, random_state=0)
+    km.fit(X)
+    label = km.fit_predict(X)
+    plt.figure()
+    plt.scatter(X[:,0],X[:,1], c = label)
+    plt.scatter(km.cluster_centers_[:,0],km.cluster_centers_[:,1], marker='+', color = 'purple')
+    plt.xlabel('$x_1$')
+    plt.ylabel('$x_2$')
+    plt.title('Za k = ' + str(k))
+    plt.show()
+
+
