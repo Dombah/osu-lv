@@ -66,6 +66,7 @@ model.compile(optimizer='adam',
 
 # 74.15 na 5 epoha
 # Veliki batch size (90) tocnost: 73.24
+# Mali batch size (10) tocnost: 71.53
 model.fit(X_train_n,
             y_train,
             epochs = 5,
