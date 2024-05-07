@@ -1,8 +1,8 @@
 import numpy as np
 from tensorflow import keras
-from tensorflow.keras import layers
-from tensorflow.keras.datasets import cifar10
-from tensorflow.keras.utils import to_categorical
+from keras import layers
+from keras.datasets import cifar10
+from keras.utils import to_categorical
 from matplotlib import pyplot as plt
 
 
